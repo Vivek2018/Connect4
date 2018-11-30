@@ -7,6 +7,28 @@
     android:background="@color/colorPrimaryDark"
     tools:context=".MainActivity">
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redroundbutton"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:srcCompat="@drawable/redroundbutton"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellowroundbutton"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:srcCompat="@drawable/yellowroundbutton"
+        tools:layout_editor_absoluteY="114dp" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -16,14 +38,14 @@
     <android.support.v7.widget.GridLayout
         android:id="@+id/columns"
         android:layout_width="match_parent"
-        android:layout_height="443dp"
+        android:layout_height="471dp"
         app:layout_column="7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintVertical_bias="0.804"
         app:layout_row="6">
 
         <ImageButton
@@ -71,9 +93,9 @@
 
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
-        android:layout_height="561dp"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="205dp">
+        android:layout_height="564dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="245dp">
 
         <ImageButton
             android:id="@+id/imageButton45"
@@ -121,8 +143,8 @@
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="561dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="255dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="302dp">
 
         <ImageButton
             android:id="@+id/imageButton52"
@@ -170,8 +192,8 @@
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="561dp"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="312dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="360dp">
 
         <ImageButton
             android:id="@+id/imageButton59"
@@ -220,7 +242,7 @@
         android:layout_width="match_parent"
         android:layout_height="561dp"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="384dp">
+        tools:layout_editor_absoluteY="417dp">
 
         <ImageButton
             android:id="@+id/imageButton66"
@@ -267,9 +289,9 @@
 
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
-        android:layout_height="443dp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="400dp">
+        android:layout_height="446dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="475dp">
 
         <ImageButton
             android:id="@+id/imageButton73"
@@ -318,13 +340,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="38dp">
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="0dp">
 
             <LinearLayout
@@ -343,7 +365,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="1 Player"
-                        tools:layout_editor_absoluteX="290dp"
+                        tools:layout_editor_absoluteX="202dp"
                         tools:layout_editor_absoluteY="0dp" />
 
                     <Button
@@ -353,12 +375,13 @@
                         android:layout_weight="1"
                         android:text="2 Player"
                         tools:layout_editor_absoluteX="290dp"
-                        tools:layout_editor_absoluteY="48dp" />
+                        tools:layout_editor_absoluteY="0dp" />
 
                     <Button
                         android:id="@+id/button3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/17882"
                         android:text="Back"
                         tools:layout_editor_absoluteX="1dp"
                         tools:layout_editor_absoluteY="0dp" />

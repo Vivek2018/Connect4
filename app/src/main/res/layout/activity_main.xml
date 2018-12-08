@@ -397,11 +397,20 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Show Score"
+        android:layout_width="186dp"
+        android:layout_height="51dp"
         android:onClick="showScore"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="114dp" />
+        android:text="Show Score"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="189dp"
+        android:layout_height="51dp"
+        android:onClick="resetBoard"
+        android:text="Reset Board"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="50dp" />
 
 </android.support.constraint.ConstraintLayout>

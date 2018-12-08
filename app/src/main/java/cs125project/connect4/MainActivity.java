@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                     player2HCounter = 1;
                     continue;
                 }
-                if (this.board[i][j].equals(this.board[i][j])) {
+                if (this.board[i][j].equals(this.board[i + 1][j])) {
                     if (this.board[i][j].equals(player1)) {
                         player1HCounter++;
                     } else if (this.board[i][j].equals(player2)) {
@@ -75,23 +75,12 @@ public class MainActivity extends AppCompatActivity {
         return 0;
     }
 
-    public void showScore(View view) {
-        Toast.makeText(this, "Player 1: " + player1.getScore() + " Player 2: " + player2.getScore(), Toast.LENGTH_LONG).show();
-    }
-
-    public void resetBoard() {
-        for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board.length; j++) {
-                board[i][j] = null;
-            }
-        }
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button button = findViewById(R.id.button38);
+
+        Button button = (Button) findViewById(R.id.button38);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -111,19 +100,35 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 if (board[0][0] != null) {
-                    System.out.println("Column is full, pick another row!");
+                    Toast.makeText(MainActivity.this, "Please select a different column!", Toast.LENGTH_LONG).show();
                 }
                 if (getWinner() == 1) {
-                    System.out.println("Player 1 is the Winner!");
+                    Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
-                    resetBoard();
                 }
                 if (getWinner() == 2) {
-                    System.out.println("Player 2 is the Winner!");
+                    Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
-                    resetBoard();
                 }
             }
         });
+        Button button2 = findViewById(R.id.button45);
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+            }
+        });
+    }
+
+    public void showScore(View view) {
+        Toast.makeText(this, "Player 1: " + player1.getScore() + " Player 2: " + player2.getScore(), Toast.LENGTH_LONG).show();
+    }
+
+    public void resetBoard(View view) {
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board.length; j++) {
+                board[i][j] = null;
+            }
+        }
     }
 }

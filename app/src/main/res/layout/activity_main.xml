@@ -33,7 +33,9 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="233dp"></LinearLayout>
 
     <android.support.v7.widget.GridLayout
         android:id="@+id/columns"
@@ -346,7 +348,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteX="92dp"
             tools:layout_editor_absoluteY="0dp">
 
             <LinearLayout
@@ -392,5 +394,14 @@
 
         </LinearLayout>
     </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Score"
+        android:onClick="showScore"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="114dp" />
 
 </android.support.constraint.ConstraintLayout>

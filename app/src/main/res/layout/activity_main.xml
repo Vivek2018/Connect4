@@ -11,41 +11,65 @@
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
         android:background="@drawable/redroundbutton"
+        app:layout_constraintBottom_toTopOf="@+id/columns"
         app:layout_constraintEnd_toStartOf="@+id/linearLayout"
-        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toEndOf="@+id/linearLayout"
-        app:srcCompat="@drawable/redroundbutton"
-        tools:layout_editor_absoluteY="114dp" />
+        app:srcCompat="@drawable/redroundbutton" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/yellowroundbutton"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/redroundbutton"
+        app:layout_constraintBottom_toTopOf="@+id/columns"
         app:layout_constraintEnd_toStartOf="@+id/linearLayout"
-        app:layout_constraintHorizontal_bias="0.797"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:srcCompat="@drawable/yellowroundbutton"
-        tools:layout_editor_absoluteY="114dp" />
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:srcCompat="@drawable/yellowroundbutton" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="93dp"
+        android:layout_height="39dp"
+        android:gravity="right"
+        android:onClick="resetBoard"
+        android:text="Reset   "
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </LinearLayout>
 
     <android.support.v7.widget.GridLayout
         android:id="@+id/columns"
         android:layout_width="match_parent"
-        android:layout_height="471dp"
+        android:layout_height="469dp"
         app:layout_column="7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.813"
+        app:layout_constraintVertical_bias="0.912"
         app:layout_row="6">
 
         <ImageButton
@@ -94,8 +118,12 @@
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="564dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="214dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.629">
 
         <ImageButton
             android:id="@+id/imageButton45"
@@ -143,8 +171,12 @@
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="561dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="339dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.502">
 
         <ImageButton
             android:id="@+id/imageButton52"
@@ -192,8 +224,12 @@
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="561dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="402dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.372">
 
         <ImageButton
             android:id="@+id/imageButton59"
@@ -241,8 +277,12 @@
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="561dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="465dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.245">
 
         <ImageButton
             android:id="@+id/imageButton66"
@@ -290,8 +330,13 @@
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="446dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="528dp">
+        android:layout_marginTop="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.158">
 
         <ImageButton
             android:id="@+id/imageButton73"
@@ -336,60 +381,9 @@
             android:background="@drawable/roundbutton" />
     </android.support.v7.widget.GridLayout>
 
-    <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="43dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="786dp"
-            android:orientation="vertical"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="16dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:orientation="horizontal">
-
-                <android.support.constraint.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-
-                    <Button
-                        android:id="@+id/button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="1 Player"
-                        tools:layout_editor_absoluteX="215dp"
-                        tools:layout_editor_absoluteY="0dp" />
-
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="2 Player"
-                        tools:layout_editor_absoluteX="307dp"
-                        tools:layout_editor_absoluteY="0dp" />
-
-                    <Button
-                        android:id="@+id/button3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Back"
-                        tools:layout_editor_absoluteX="1dp"
-                        tools:layout_editor_absoluteY="0dp" />
-
-                </android.support.constraint.ConstraintLayout>
-
-            </LinearLayout>
-
-        </LinearLayout>
-    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </android.support.constraint.ConstraintLayout>

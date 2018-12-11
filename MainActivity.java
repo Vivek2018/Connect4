@@ -17,20 +17,108 @@ public class MainActivity extends AppCompatActivity {
     private int player1Counter = 1;
     private int player2Counter = 0;
 
+    public void resetBoard() {
+        final ImageButton button = findViewById(R.id.imageButton38);
+        final ImageButton button2 = findViewById(R.id.imageButton45);
+        final ImageButton button3 = findViewById(R.id.imageButton52);
+        final ImageButton button4 = findViewById(R.id.imageButton59);
+        final ImageButton button5 = findViewById(R.id.imageButton66);
+        final ImageButton button6 = findViewById(R.id.imageButton73);
+        final ImageButton button7 = findViewById(R.id.imageButton39);
+        final ImageButton button8 = findViewById(R.id.imageButton46);
+        final ImageButton button9 = findViewById(R.id.imageButton53);
+        final ImageButton button10 = findViewById(R.id.imageButton60);
+        final ImageButton button11 = findViewById(R.id.imageButton67);
+        final ImageButton button12 = findViewById(R.id.imageButton74);
+        final ImageButton button13 = findViewById(R.id.imageButton40);
+        final ImageButton button14 = findViewById(R.id.imageButton47);
+        final ImageButton button15 = findViewById(R.id.imageButton54);
+        final ImageButton button16 = findViewById(R.id.imageButton61);
+        final ImageButton button17 = findViewById(R.id.imageButton68);
+        final ImageButton button18 = findViewById(R.id.imageButton75);
+        final ImageButton button19 = findViewById(R.id.imageButton41);
+        final ImageButton button20 = findViewById(R.id.imageButton48);
+        final ImageButton button21 = findViewById(R.id.imageButton55);
+        final ImageButton button22 = findViewById(R.id.imageButton62);
+        final ImageButton button23 = findViewById(R.id.imageButton69);
+        final ImageButton button24 = findViewById(R.id.imageButton76);
+        final ImageButton button25 = findViewById(R.id.imageButton42);
+        final ImageButton button26 = findViewById(R.id.imageButton49);
+        final ImageButton button27 = findViewById(R.id.imageButton56);
+        final ImageButton button28 = findViewById(R.id.imageButton63);
+        final ImageButton button29 = findViewById(R.id.imageButton70);
+        final ImageButton button30 = findViewById(R.id.imageButton77);
+        final ImageButton button31 = findViewById(R.id.imageButton43);
+        final ImageButton button32 = findViewById(R.id.imageButton50);
+        final ImageButton button33 = findViewById(R.id.imageButton57);
+        final ImageButton button34 = findViewById(R.id.imageButton64);
+        final ImageButton button35 = findViewById(R.id.imageButton71);
+        final ImageButton button36 = findViewById(R.id.imageButton78);
+        final ImageButton button37 = findViewById(R.id.imageButton44);
+        final ImageButton button38 = findViewById(R.id.imageButton51);
+        final ImageButton button39 = findViewById(R.id.imageButton58);
+        final ImageButton button40 = findViewById(R.id.imageButton65);
+        final ImageButton button41 = findViewById(R.id.imageButton72);
+        final ImageButton button42 = findViewById(R.id.imageButton79);
+        button.setImageResource(R.drawable.roundbutton);
+        button2.setImageResource(R.drawable.roundbutton);
+        button3.setImageResource(R.drawable.roundbutton);
+        button4.setImageResource(R.drawable.roundbutton);
+        button5.setImageResource(R.drawable.roundbutton);
+        button6.setImageResource(R.drawable.roundbutton);
+        button7.setImageResource(R.drawable.roundbutton);
+        button8.setImageResource(R.drawable.roundbutton);
+        button9.setImageResource(R.drawable.roundbutton);
+        button10.setImageResource(R.drawable.roundbutton);
+        button11.setImageResource(R.drawable.roundbutton);
+        button12.setImageResource(R.drawable.roundbutton);
+        button13.setImageResource(R.drawable.roundbutton);
+        button14.setImageResource(R.drawable.roundbutton);
+        button15.setImageResource(R.drawable.roundbutton);
+        button16.setImageResource(R.drawable.roundbutton);
+        button17.setImageResource(R.drawable.roundbutton);
+        button18.setImageResource(R.drawable.roundbutton);
+        button19.setImageResource(R.drawable.roundbutton);
+        button20.setImageResource(R.drawable.roundbutton);
+        button21.setImageResource(R.drawable.roundbutton);
+        button22.setImageResource(R.drawable.roundbutton);
+        button23.setImageResource(R.drawable.roundbutton);
+        button24.setImageResource(R.drawable.roundbutton);
+        button25.setImageResource(R.drawable.roundbutton);
+        button26.setImageResource(R.drawable.roundbutton);
+        button27.setImageResource(R.drawable.roundbutton);
+        button28.setImageResource(R.drawable.roundbutton);
+        button29.setImageResource(R.drawable.roundbutton);
+        button30.setImageResource(R.drawable.roundbutton);
+        button31.setImageResource(R.drawable.roundbutton);
+        button32.setImageResource(R.drawable.roundbutton);
+        button33.setImageResource(R.drawable.roundbutton);
+        button34.setImageResource(R.drawable.roundbutton);
+        button35.setImageResource(R.drawable.roundbutton);
+        button36.setImageResource(R.drawable.roundbutton);
+        button37.setImageResource(R.drawable.roundbutton);
+        button38.setImageResource(R.drawable.roundbutton);
+        button39.setImageResource(R.drawable.roundbutton);
+        button40.setImageResource(R.drawable.roundbutton);
+        button41.setImageResource(R.drawable.roundbutton);
+        button42.setImageResource(R.drawable.roundbutton);
+        board = new Player[7][6];
+    }
+
     public int getWinner() {
-        for (int i = 0; i < board.length - 1; i++) {
-            int player1HCounter = 0;
-            int player2HCounter = 0;
-            for (int j = 0; j < board[0].length; j++) {
-                if (this.board[i][j] == null || this.board[i + 1][j] == null) {
-                    player1HCounter = 0;
-                    player2HCounter = 0;
+        for (int i = 0; i < board[0].length; i++) {
+            int player1HCounter = 1;
+            int player2HCounter = 1;
+            for (int j = 0; j < board.length - 1; j++) {
+                if (this.board[j][i] == null || this.board[j + 1][i] == null) {
+                    player1HCounter = 1;
+                    player2HCounter = 1;
                     continue;
                 }
-                if (this.board[i][j].equals(this.board[i + 1][j])) {
-                    if (this.board[i][j].equals(player1)) {
+                if (this.board[j][i].equals(this.board[j + 1][i])) {
+                    if (this.board[j][i].equals(player1)) {
                         player1HCounter++;
-                    } else if (this.board[i][j].equals(player2)) {
+                    } else if (this.board[j][i].equals(player2)) {
                         player2HCounter++;
                     }
                     if (player1HCounter == 4) {
@@ -39,18 +127,18 @@ public class MainActivity extends AppCompatActivity {
                         return 2;
                     }
                 } else {
-                    player1HCounter = 0;
-                    player2HCounter = 0;
+                    player1HCounter = 1;
+                    player2HCounter = 1;
                 }
             }
         }
         for (int i = 0; i < board.length; i++) {
-            int player1VCounter = 0;
-            int player2VCounter = 0;
+            int player1VCounter = 1;
+            int player2VCounter = 1;
             for (int j = 0; j < board[0].length - 1; j++) {
                 if (this.board[i][j] == null || this.board[i][j + 1] == null) {
-                    player1VCounter = 0;
-                    player2VCounter = 0;
+                    player1VCounter = 1;
+                    player2VCounter = 1;
                     continue;
                 }
 
@@ -69,8 +157,8 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                 } else {
-                    player1VCounter = 0;
-                    player2VCounter = 0;
+                    player1VCounter = 1;
+                    player2VCounter = 1;
                 }
             }
         }
@@ -83,6 +171,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         player1 = new Player();
         player2 = new Player();
+        final Button reset = findViewById(R.id.reset);
+        reset.setOnClickListener(new View.OnClickListener() {
+           public void onClick(View v) {
+               resetBoard();
+           }
+        });
         final ImageButton button = findViewById(R.id.imageButton38);
         final ImageButton button2 = findViewById(R.id.imageButton45);
         final ImageButton button3 = findViewById(R.id.imageButton52);
@@ -157,10 +251,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -232,10 +328,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -307,10 +405,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -382,10 +482,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -457,10 +559,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -532,10 +636,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -613,10 +719,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -688,10 +796,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -763,10 +873,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -838,10 +950,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -913,10 +1027,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -988,10 +1104,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -1069,10 +1187,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -1144,10 +1264,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -1219,10 +1341,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -1294,10 +1418,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -1369,10 +1495,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -1444,10 +1572,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -1525,10 +1655,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -1600,10 +1732,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -1675,10 +1809,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -1750,10 +1886,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -1825,10 +1963,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -1900,10 +2040,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -1981,10 +2123,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -2056,10 +2200,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -2131,10 +2277,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -2206,10 +2354,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -2281,10 +2431,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -2356,10 +2508,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -2437,10 +2591,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -2512,10 +2668,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -2587,10 +2745,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -2662,10 +2822,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -2737,10 +2899,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -2812,10 +2976,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -2893,10 +3059,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -2968,10 +3136,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -3043,10 +3213,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -3118,10 +3290,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -3193,10 +3367,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });
@@ -3268,10 +3444,12 @@ public class MainActivity extends AppCompatActivity {
                 if (getWinner() == 1) {
                     Toast.makeText(MainActivity.this, "Player 1 is the winner!", Toast.LENGTH_LONG).show();
                     player1.addScore();
+                    resetBoard();
                 }
                 if (getWinner() == 2) {
                     Toast.makeText(MainActivity.this, "Player 2 is the winner!", Toast.LENGTH_LONG).show();
                     player2.addScore();
+                    resetBoard();
                 }
             }
         });

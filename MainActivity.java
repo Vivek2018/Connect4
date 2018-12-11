@@ -171,6 +171,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         player1 = new Player();
         player2 = new Player();
+        final ImageButton red = findViewById(R.id.imageButton);
+        final ImageButton yellow = findViewById(R.id.imageButton2);
+        red.setImageResource(R.drawable.redroundbutton);
+        yellow.setImageResource(R.drawable.roundbutton);
         final Button reset = findViewById(R.id.reset);
         reset.setOnClickListener(new View.OnClickListener() {
            public void onClick(View v) {
@@ -191,11 +195,18 @@ public class MainActivity extends AppCompatActivity {
                         board[0][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
+
                         button6.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[0][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
+
                         button6.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -205,6 +216,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[0][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button5.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -225,6 +239,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[0][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button5.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -268,11 +284,16 @@ public class MainActivity extends AppCompatActivity {
                         board[0][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button6.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[0][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button6.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -282,6 +303,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[0][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button5.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -302,6 +326,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[0][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button5.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -345,11 +371,16 @@ public class MainActivity extends AppCompatActivity {
                         board[0][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button6.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[0][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button6.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -359,6 +390,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[0][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button5.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -379,6 +413,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[0][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button5.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -422,11 +458,16 @@ public class MainActivity extends AppCompatActivity {
                         board[0][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button6.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[0][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button6.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -436,6 +477,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[0][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button5.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -456,6 +500,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[0][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button5.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -499,11 +545,16 @@ public class MainActivity extends AppCompatActivity {
                         board[0][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button6.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[0][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button6.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -513,6 +564,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[0][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button5.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -533,6 +587,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[0][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button5.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -576,11 +632,16 @@ public class MainActivity extends AppCompatActivity {
                         board[0][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button6.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[0][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button6.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -590,6 +651,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[0][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button5.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -610,6 +674,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[0][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button5.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -659,11 +725,16 @@ public class MainActivity extends AppCompatActivity {
                         board[1][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button12.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[1][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button12.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -673,6 +744,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[1][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button11.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -693,6 +767,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[1][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button11.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -736,11 +812,16 @@ public class MainActivity extends AppCompatActivity {
                         board[1][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button12.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[1][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button12.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -750,6 +831,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[1][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button11.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -770,6 +854,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[1][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button11.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -813,11 +899,16 @@ public class MainActivity extends AppCompatActivity {
                         board[1][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button12.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[1][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button12.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -827,6 +918,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[1][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button11.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -847,6 +941,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[1][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button11.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -890,11 +986,16 @@ public class MainActivity extends AppCompatActivity {
                         board[1][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button12.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[1][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button12.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -904,6 +1005,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[1][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button11.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -924,6 +1028,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[1][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button11.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -967,11 +1073,16 @@ public class MainActivity extends AppCompatActivity {
                         board[1][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button12.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[1][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button12.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -981,6 +1092,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[1][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button11.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -1001,6 +1115,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[1][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button11.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -1044,11 +1160,16 @@ public class MainActivity extends AppCompatActivity {
                         board[1][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button12.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[1][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button12.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -1058,6 +1179,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[1][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button11.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -1078,6 +1202,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[1][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button11.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -1127,11 +1253,16 @@ public class MainActivity extends AppCompatActivity {
                         board[2][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button18.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[2][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button18.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -1141,6 +1272,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[2][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button17.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -1161,6 +1295,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[2][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button17.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -1204,11 +1340,16 @@ public class MainActivity extends AppCompatActivity {
                         board[2][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button18.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[2][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button18.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -1218,6 +1359,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[2][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button17.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -1238,6 +1382,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[2][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button17.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -1281,11 +1427,16 @@ public class MainActivity extends AppCompatActivity {
                         board[2][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button18.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[2][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button18.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -1295,6 +1446,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[2][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button17.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -1315,6 +1469,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[2][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button17.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -1358,11 +1514,16 @@ public class MainActivity extends AppCompatActivity {
                         board[2][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button18.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[2][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button18.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -1372,6 +1533,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[2][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button17.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -1392,6 +1556,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[2][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button17.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -1435,11 +1601,16 @@ public class MainActivity extends AppCompatActivity {
                         board[2][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button18.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[2][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button18.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -1449,6 +1620,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[2][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button17.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -1469,6 +1643,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[2][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button17.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -1512,11 +1688,16 @@ public class MainActivity extends AppCompatActivity {
                         board[2][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button18.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[2][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button18.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -1526,6 +1707,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[2][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button17.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -1546,6 +1730,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[2][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button17.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -1595,11 +1781,16 @@ public class MainActivity extends AppCompatActivity {
                         board[3][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button24.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[3][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button24.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -1609,6 +1800,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[3][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button23.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -1629,6 +1823,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[3][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button23.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -1672,11 +1868,16 @@ public class MainActivity extends AppCompatActivity {
                         board[3][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button24.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[3][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button24.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -1686,6 +1887,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[3][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button23.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -1706,6 +1910,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[3][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button23.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -1749,11 +1955,16 @@ public class MainActivity extends AppCompatActivity {
                         board[3][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button24.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[3][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button24.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -1763,6 +1974,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[3][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button23.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -1783,6 +1997,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[3][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button23.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -1826,11 +2042,16 @@ public class MainActivity extends AppCompatActivity {
                         board[3][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button24.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[3][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button24.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -1840,6 +2061,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[3][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button23.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -1860,6 +2084,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[3][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button23.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -1903,11 +2129,16 @@ public class MainActivity extends AppCompatActivity {
                         board[3][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button24.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[3][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button24.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -1917,6 +2148,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[3][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button23.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -1937,6 +2171,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[3][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button23.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -1980,11 +2216,16 @@ public class MainActivity extends AppCompatActivity {
                         board[3][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button24.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[3][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button24.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -1994,6 +2235,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[3][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button23.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -2014,6 +2258,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[3][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button23.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -2063,11 +2309,16 @@ public class MainActivity extends AppCompatActivity {
                         board[4][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button30.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[4][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button30.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -2077,6 +2328,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[4][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button29.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -2097,6 +2351,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[4][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button29.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -2140,11 +2396,16 @@ public class MainActivity extends AppCompatActivity {
                         board[4][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button30.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[4][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button30.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -2154,6 +2415,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[4][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button29.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -2174,6 +2438,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[4][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button29.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -2217,11 +2483,16 @@ public class MainActivity extends AppCompatActivity {
                         board[4][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button30.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[4][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button30.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -2231,6 +2502,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[4][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button29.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -2251,6 +2525,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[4][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button29.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -2294,11 +2570,16 @@ public class MainActivity extends AppCompatActivity {
                         board[4][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button30.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[4][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button30.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -2308,6 +2589,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[4][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button29.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -2328,6 +2612,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[4][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button29.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -2371,11 +2657,16 @@ public class MainActivity extends AppCompatActivity {
                         board[4][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button30.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[4][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button30.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -2385,6 +2676,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[4][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button29.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -2405,6 +2699,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[4][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button29.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -2448,11 +2744,16 @@ public class MainActivity extends AppCompatActivity {
                         board[4][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button30.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[4][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button30.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -2462,6 +2763,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[4][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button29.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -2482,6 +2786,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[4][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button29.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -2531,11 +2837,16 @@ public class MainActivity extends AppCompatActivity {
                         board[5][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button36.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[5][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button36.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -2545,6 +2856,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[5][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button35.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -2565,6 +2879,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[5][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button35.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -2608,11 +2924,16 @@ public class MainActivity extends AppCompatActivity {
                         board[5][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button36.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[5][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button36.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -2622,6 +2943,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[5][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button35.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -2642,6 +2966,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[5][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button35.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -2685,11 +3011,16 @@ public class MainActivity extends AppCompatActivity {
                         board[5][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button36.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[5][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button36.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -2699,6 +3030,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[5][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button35.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -2719,6 +3053,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[5][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button35.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -2762,11 +3098,16 @@ public class MainActivity extends AppCompatActivity {
                         board[5][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button36.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[5][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button36.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -2776,6 +3117,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[5][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button35.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -2796,6 +3140,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[5][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button35.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -2839,11 +3185,16 @@ public class MainActivity extends AppCompatActivity {
                         board[5][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button36.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[5][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button36.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -2853,6 +3204,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[5][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button35.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -2873,6 +3227,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[5][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button35.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -2916,11 +3272,16 @@ public class MainActivity extends AppCompatActivity {
                         board[5][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button36.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[5][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button36.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -2930,6 +3291,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[5][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button35.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -2950,6 +3314,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[5][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button35.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -2999,11 +3365,16 @@ public class MainActivity extends AppCompatActivity {
                         board[6][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button42.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[6][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button42.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -3013,6 +3384,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[6][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button41.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -3033,6 +3407,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[6][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button41.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -3076,11 +3452,16 @@ public class MainActivity extends AppCompatActivity {
                         board[6][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button42.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[6][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button42.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -3090,6 +3471,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[6][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button41.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -3110,6 +3494,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[6][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button41.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -3153,11 +3539,16 @@ public class MainActivity extends AppCompatActivity {
                         board[6][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button42.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[6][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button42.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -3167,6 +3558,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[6][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button41.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -3187,6 +3581,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[6][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button41.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -3230,11 +3626,16 @@ public class MainActivity extends AppCompatActivity {
                         board[6][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button42.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[6][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button42.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -3244,6 +3645,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[6][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button41.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -3264,6 +3668,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[6][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button41.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -3307,11 +3713,16 @@ public class MainActivity extends AppCompatActivity {
                         board[6][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button42.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[6][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button42.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -3321,6 +3732,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[6][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button41.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -3341,6 +3755,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[6][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button41.setImageResource(R.drawable.yellowroundbutton);
                                     break;
@@ -3384,11 +3800,16 @@ public class MainActivity extends AppCompatActivity {
                         board[6][5] = player1;
                         player1Counter = 0;
                         player2Counter = 1;
+                        red.setImageResource(R.drawable.roundbutton);
+                        yellow.setImageResource(R.drawable.yellowroundbutton);
+
                         button42.setImageResource(R.drawable.redroundbutton);
                     } else if (player2Counter == 1) {
                         board[6][5] = player2;
                         player1Counter = 1;
                         player2Counter = 0;
+                        red.setImageResource(R.drawable.redroundbutton);
+                        yellow.setImageResource(R.drawable.roundbutton);
                         button42.setImageResource(R.drawable.yellowroundbutton);
                     }
                 } else {
@@ -3398,6 +3819,9 @@ public class MainActivity extends AppCompatActivity {
                                 board[6][i] = player1;
                                 player1Counter = 0;
                                 player2Counter = 1;
+                                red.setImageResource(R.drawable.roundbutton);
+                                yellow.setImageResource(R.drawable.yellowroundbutton);
+
                                 if (i == 4) {
                                     button41.setImageResource(R.drawable.redroundbutton);
                                     break;
@@ -3418,6 +3842,8 @@ public class MainActivity extends AppCompatActivity {
                                 board[6][i] = player2;
                                 player1Counter = 1;
                                 player2Counter = 0;
+                                red.setImageResource(R.drawable.redroundbutton);
+                                yellow.setImageResource(R.drawable.roundbutton);
                                 if (i == 4) {
                                     button41.setImageResource(R.drawable.yellowroundbutton);
                                     break;

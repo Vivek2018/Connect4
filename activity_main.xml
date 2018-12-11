@@ -11,11 +11,11 @@
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="23dp"
         android:background="@drawable/redroundbutton"
         app:layout_constraintBottom_toTopOf="@+id/columns"
         app:layout_constraintEnd_toStartOf="@+id/linearLayout"
-        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toEndOf="@+id/linearLayout"
         app:srcCompat="@drawable/redroundbutton" />
 
@@ -23,12 +23,17 @@
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="503dp"
+        android:layout_marginRight="503dp"
+        android:layout_marginBottom="400dp"
         android:background="@drawable/yellowroundbutton"
-        app:layout_constraintBottom_toTopOf="@+id/columns"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
-        app:layout_constraintHorizontal_bias="0.797"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/yellowroundbutton" />
 
     <LinearLayout
@@ -38,12 +43,13 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></LinearLayout>
 
     <android.support.v7.widget.GridLayout
         android:id="@+id/columns"
         android:layout_width="match_parent"
-        android:layout_height="471dp"
+        android:layout_height="469dp"
         app:layout_column="7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -311,6 +317,7 @@
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="446dp"
+        android:layout_marginTop="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -361,67 +368,18 @@
             android:background="@drawable/roundbutton" />
     </android.support.v7.widget.GridLayout>
 
-    <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="110dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="38dp"
+        android:onClick="resetBoard"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="4dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:orientation="horizontal">
-
-                <android.support.constraint.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@color/colorPrimaryDark">
-
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="32dp"
-                        android:layout_marginLeft="32dp"
-                        android:layout_marginBottom="6dp"
-                        android:text="Yellow:"
-                        android:textColor="@android:color/background_light"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="76dp"
-                        android:layout_marginEnd="43dp"
-                        android:layout_marginRight="43dp"
-                        android:layout_marginBottom="6dp"
-                        android:text="Red:"
-                        android:textColor="@android:color/background_light"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </android.support.constraint.ConstraintLayout>
-
-            </LinearLayout>
-
-        </LinearLayout>
-    </android.support.constraint.ConstraintLayout>
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0" />
 
 </android.support.constraint.ConstraintLayout>
